@@ -10,7 +10,7 @@ Summary(pl):	Modu³ Perla Audio::ESD - interfejs do ESD ("O¶wieconego" Demona D¼w
 Name:		perl-Audio-ESD
 Version:	0.02
 Release:	2
-License:	Artistic or GPL
+License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	71f71b5e4d47028482e2ae18ae010c2a
