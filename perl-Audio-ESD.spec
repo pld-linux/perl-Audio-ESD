@@ -6,7 +6,7 @@
 %define		pnam	ESD
 Summary:	Audio::ESD Perl module - interface to Enlightened Sound Daemon
 Summary(pl):	Modu³ Perla Audio::ESD - interfejs do ESD ("O¶wieconego" Demona D¼wiêku)
-Name:		perl-Audio-DSP
+Name:		perl-Audio-ESD
 Version:	0.01
 Release:	1
 License:	Artistic or GPL
