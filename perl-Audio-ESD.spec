@@ -3,8 +3,8 @@
 %bcond_with	tests	# perform "make test" (requires running esd)
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Audio
-%define	pnam	ESD
+%define		pdir	Audio
+%define		pnam	ESD
 Summary:	Audio::ESD Perl module - interface to Enlightened Sound Daemon
 Summary(pl):	Modu³ Perla Audio::ESD - interfejs do ESD ("O¶wieconego" Demona D¼wiêku)
 Name:		perl-Audio-ESD
@@ -23,13 +23,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This module provides a Perl interface to the Enlightened Sound Daemon,
 which is used on many Linux systems to mix sound output streams from
-multiple desktop applications.  It allows you to open input, output,
+multiple desktop applications. It allows you to open input, output,
 monitoring, and filtering streams which function like normal Perl
 filehandles, as well as to control various parameters on the ESD
 server.
 
 %description -l pl
-Ten modu³ udostêpnia perlowy interfejs  do ESD - "O¶wieconego" Demona
+Ten modu³ udostêpnia perlowy interfejs do ESD - "O¶wieconego" Demona
 D¼wiêku, który jest u¿ywany na wielu systemach linuksowych do
 mieszania strumieni d¼wiêkowych z wielu aplikacji. Pozwala na
 otworzenie strumieni wej¶ciowego, wyj¶ciowego, monitoruj±cego i
