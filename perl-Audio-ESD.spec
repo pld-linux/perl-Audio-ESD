@@ -9,13 +9,13 @@ Summary:	Audio::ESD Perl module - interface to Enlightened Sound Daemon
 Summary(pl):	Modu³ Perla Audio::ESD - interfejs do ESD ("O¶wieconego" Demona D¼wiêku)
 Name:		perl-Audio-ESD
 Version:	0.02
-Release:	1
+Release:	2
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	esound-devel
 BuildRequires:	perl-devel >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -45,7 +45,8 @@ esd_server_info_t *	T_PTROBJ
 esd_info_t *		T_PTROBJ
 EOF
 
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %{?_with_tests:%{__make} test}
@@ -62,10 +63,10 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_sitearch}/Audio/ESD.pm
-%dir %{perl_sitearch}/auto/Audio/ESD
+%{perl_vendorarch}/Audio/ESD.pm
+%dir %{perl_vendorarch}/auto/Audio/ESD
 # is this empty file required ?
-%{perl_sitearch}/auto/Audio/ESD/autosplit.ix
-%{perl_sitearch}/auto/Audio/ESD/*.bs
-%attr(755,root,root) %{perl_sitearch}/auto/Audio/ESD/*.so
+%{perl_vendorarch}/auto/Audio/ESD/autosplit.ix
+%{perl_vendorarch}/auto/Audio/ESD/*.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/Audio/ESD/*.so
 %{_mandir}/man3/*
