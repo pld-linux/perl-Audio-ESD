@@ -3,8 +3,8 @@
 %bcond_with	tests	# perform "make test" (requires running esd)
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	Audio
-%define		pnam	ESD
+%define	pdir	Audio
+%define	pnam	ESD
 Summary:	Audio::ESD Perl module - interface to Enlightened Sound Daemon
 Summary(pl):	Modu³ Perla Audio::ESD - interfejs do ESD ("O¶wieconego" Demona D¼wiêku)
 Name:		perl-Audio-ESD
