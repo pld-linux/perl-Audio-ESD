@@ -1,13 +1,14 @@
 #
 # Conditional build:
 # _with_tests - perform "make test" (requires running esd)
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Audio
 %define		pnam	ESD
 Summary:	Audio::ESD Perl module - interface to Enlightened Sound Daemon
 Summary(pl):	Modu³ Perla Audio::ESD - interfejs do ESD ("O¶wieconego" Demona D¼wiêku)
 Name:		perl-Audio-ESD
-Version:	0.01
+Version:	0.02
 Release:	1
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
@@ -63,6 +64,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes README
 %{perl_sitearch}/Audio/ESD.pm
 %dir %{perl_sitearch}/auto/Audio/ESD
+# is this empty file required ?
 %{perl_sitearch}/auto/Audio/ESD/autosplit.ix
 %{perl_sitearch}/auto/Audio/ESD/*.bs
 %attr(755,root,root) %{perl_sitearch}/auto/Audio/ESD/*.so
