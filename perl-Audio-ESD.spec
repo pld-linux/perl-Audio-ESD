@@ -45,7 +45,7 @@ esd_server_info_t *	T_PTROBJ
 esd_info_t *		T_PTROBJ
 EOF
 
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %{?_with_tests:%{__make} test}
