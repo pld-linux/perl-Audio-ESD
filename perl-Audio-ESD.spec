@@ -6,7 +6,7 @@
 %define		pdir	Audio
 %define		pnam	ESD
 Summary:	Audio::ESD Perl module - interface to Enlightened Sound Daemon
-Summary(pl):	Modu³ Perla Audio::ESD - interfejs do ESD ("O¶wieconego" Demona D¼wiêku)
+Summary(pl.UTF-8):   ModuÅ‚ Perla Audio::ESD - interfejs do ESD ("OÅ›wieconego" Demona DÅºwiÄ™ku)
 Name:		perl-Audio-ESD
 Version:	0.02
 Release:	3
@@ -28,13 +28,13 @@ monitoring, and filtering streams which function like normal Perl
 filehandles, as well as to control various parameters on the ESD
 server.
 
-%description -l pl
-Ten modu³ udostêpnia perlowy interfejs do ESD - "O¶wieconego" Demona
-D¼wiêku, który jest u¿ywany na wielu systemach linuksowych do
-mieszania strumieni d¼wiêkowych z wielu aplikacji. Pozwala na
-otworzenie strumieni wej¶ciowego, wyj¶ciowego, monitoruj±cego i
-filtruj±cego, które dzia³aj± jak normalne perlowe uchwyty plików, a
-tak¿e na kontrolê ró¿nych parametrów serwera ESD.
+%description -l pl.UTF-8
+Ten moduÅ‚ udostÄ™pnia perlowy interfejs do ESD - "OÅ›wieconego" Demona
+DÅºwiÄ™ku, ktÃ³ry jest uÅ¼ywany na wielu systemach linuksowych do
+mieszania strumieni dÅºwiÄ™kowych z wielu aplikacji. Pozwala na
+otworzenie strumieni wejÅ›ciowego, wyjÅ›ciowego, monitorujÄ…cego i
+filtrujÄ…cego, ktÃ³re dziaÅ‚ajÄ… jak normalne perlowe uchwyty plikÃ³w, a
+takÅ¼e na kontrolÄ™ rÃ³Å¼nych parametrÃ³w serwera ESD.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
