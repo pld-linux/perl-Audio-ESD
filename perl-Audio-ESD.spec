@@ -9,7 +9,7 @@ Summary:	Audio::ESD Perl module - interface to Enlightened Sound Daemon
 Summary(pl.UTF-8):	Moduł Perla Audio::ESD - interfejs do ESD ("Oświeconego" Demona Dźwięku)
 Name:		perl-Audio-ESD
 Version:	0.02
-Release:	3
+Release:	4
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
