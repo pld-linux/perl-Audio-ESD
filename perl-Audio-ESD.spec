@@ -71,6 +71,5 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{perl_vendorarch}/auto/Audio/ESD
 # is this empty file required ?
 %{perl_vendorarch}/auto/Audio/ESD/autosplit.ix
-%{perl_vendorarch}/auto/Audio/ESD/*.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Audio/ESD/*.so
 %{_mandir}/man3/*
