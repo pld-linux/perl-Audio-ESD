@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_with	tests	# perform "make test" (requires running esd)
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Audio
 %define		pnam	ESD
+%include	/usr/lib/rpm/macros.perl
 Summary:	Audio::ESD Perl module - interface to Enlightened Sound Daemon
 Summary(pl.UTF-8):	Moduł Perla Audio::ESD - interfejs do ESD ("Oświeconego" Demona Dźwięku)
 Name:		perl-Audio-ESD
@@ -15,6 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	71f71b5e4d47028482e2ae18ae010c2a
+URL:		http://search.cpan.org/dist/Audio-ESD/
 BuildRequires:	esound-devel
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
