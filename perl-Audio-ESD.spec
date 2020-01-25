@@ -4,7 +4,6 @@
 
 %define		pdir	Audio
 %define		pnam	ESD
-%include	/usr/lib/rpm/macros.perl
 Summary:	Audio::ESD Perl module - interface to Enlightened Sound Daemon
 Summary(pl.UTF-8):	Moduł Perla Audio::ESD - interfejs do ESD ("Oświeconego" Demona Dźwięku)
 Name:		perl-Audio-ESD
